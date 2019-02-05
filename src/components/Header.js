@@ -7,7 +7,11 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <a href="#" className="image avatar">
+          <a
+            href="https://www.linkedin.com/in/josueperalta"
+            rel="noopener noreferrer"
+            className="image avatar"
+          >
             <img
               src={
                 'https://media.licdn.com/dms/image/C5603AQGh0ll6Jzyx-w/profile-displayphoto-shrink_200_200/0?e=1554940800&v=beta&t=sHT8KrR6wk6xxpaKSb2m_-awW0xqps1bJFDOYlKYF9w'

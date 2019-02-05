@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import Lightbox from 'react-images'
 
 class Gallery extends Component {
   renderGallery() {
@@ -17,7 +16,7 @@ class Gallery extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={obj.thumbnail} />
+            <img src={obj.thumbnail} alt={obj.caption} />
           </a>
 
           <h3>{obj.caption}</h3>
@@ -28,22 +27,9 @@ class Gallery extends Component {
 
     return <div className="row">{gallery}</div>
   }
+
   render() {
-    return (
-      <div>
-        {this.renderGallery()}
-        <Lightbox
-          currentImage={this.state.currentImage}
-          images={this.props.images}
-          isOpen={this.state.lightboxIsOpen}
-          onClickImage={this.handleClickImage}
-          onClickNext={this.gotoNext}
-          onClickPrev={this.gotoPrevious}
-          onClickThumbnail={this.gotoImage}
-          onClose={this.closeLightbox}
-        />
-      </div>
-    )
+    return <div>{this.renderGallery()}</div>
   }
 }
 

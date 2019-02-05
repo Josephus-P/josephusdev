@@ -42,21 +42,6 @@ const PROJECTS = [
 ]
 
 class HomeIndex extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
-      lightboxIsOpen: false,
-      currentImage: 0,
-    }
-
-    this.closeLightbox = this.closeLightbox.bind(this)
-    this.gotoNext = this.gotoNext.bind(this)
-    this.gotoPrevious = this.gotoPrevious.bind(this)
-    this.openLightbox = this.openLightbox.bind(this)
-    this.handleClickImage = this.handleClickImage.bind(this)
-  }
-
   render() {
     const siteTitle = 'Josue Peralta'
     const siteDescription = ''
@@ -85,13 +70,6 @@ class HomeIndex extends React.Component {
               Accumsan orci faucibus id eu lorem semper nunc nisi lorem
               vulputate lorem neque cubilia.
             </p>
-            <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Learn More
-                </a>
-              </li>
-            </ul>
           </section>
 
           <section id="two">
@@ -159,7 +137,9 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">josephusdev@gmail.com</a>
+                    <a href="mailto:josephusdev@gmail.com">
+                      josephusdev@gmail.com
+                    </a>
                   </li>
                 </ul>
               </div>
