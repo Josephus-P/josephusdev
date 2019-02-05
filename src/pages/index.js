@@ -88,8 +88,15 @@ class HomeIndex extends React.Component {
             <h2>Get In Touch</h2>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form data-netlify="true" name="contact" method="post">
+                <form
+                  data-netlify="true"
+                  name="contact"
+                  method="post"
+                  action="#"
+                  data-netlify-honeypot="bot-field"
+                >
                   <div className="row uniform 50%">
+                    <input type="hidden" name="bot-field" />
                     <div className="6u 12u$(xsmall)">
                       <input
                         type="text"
