@@ -107,25 +107,13 @@ class HomeIndex extends React.Component {
                 })
               )}
             />
-            <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Full Portfolio
-                </a>
-              </li>
-            </ul>
           </section>
 
           <section id="three">
             <h2>Get In Touch</h2>
-            <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
-            </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form method="post" action="#">
+                <form data-netlify="true" name="form" method="post">
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -155,7 +143,7 @@ class HomeIndex extends React.Component {
                 </form>
                 <ul className="actions">
                   <li>
-                    <input type="submit" value="Send Message" />
+                    <input type="submit" />
                   </li>
                 </ul>
               </div>
@@ -165,23 +153,13 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    1234 Somewhere Rd.
-                    <br />
-                    Nashville, TN 00000
-                    <br />
-                    United States
-                  </li>
-                  <li>
-                    <h3 className="icon fa-mobile">
-                      <span className="label">Phone</span>
-                    </h3>
-                    000-000-0000
+                    Greater Chicago Area
                   </li>
                   <li>
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">hello@untitled.tld</a>
+                    <a href="#">josephusdev@gmail.com</a>
                   </li>
                 </ul>
               </div>
