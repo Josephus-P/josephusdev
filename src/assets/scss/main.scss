@@ -596,7 +596,7 @@ ol {
 
 ul {
   list-style: disc;
-  margin: 0 0 _size(element-margin) 0;
+  margin: _size(element-margin) 0 _size(element-margin) 0;
   padding-left: 1em;
 
   li {
@@ -1486,7 +1486,7 @@ body.is-touch {
 
   ul {
     &.actions {
-      margin: 0 0 _size(element-margin) 0;
+      margin: _size(element-margin) 0 _size(element-margin) 0;
 
       li {
         display: block;
