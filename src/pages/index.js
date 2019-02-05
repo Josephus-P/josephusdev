@@ -23,7 +23,8 @@ const PROJECTS = [
     src: 'https://sweetheartshop.netlify.com/',
     thumbnail: sweetheart,
     caption: 'Sweetheart Shop',
-    description: 'E-Commerce website that sells bath and beauty products.',
+    description:
+      'E-Commerce website that sells bath and beauty products (WIP).',
   },
   {
     id: '3',
@@ -57,19 +58,15 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Ipsum lorem dolor aliquam ante commodo
+                I enjoy implementing ideas into websites.
                 <br />
-                magna sed accumsan arcu neque.
               </h2>
+              <p>
+                There is something satisfying about having the skill set to turn
+                someone's vision into reality.
+              </p>
             </header>
-            <p>
-              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-              nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-              lobortis tortor primis integer massa adipiscing id nisi accumsan
-              pellentesque commodo blandit enim arcu non at amet id arcu magna.
-              Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-              vulputate lorem neque cubilia.
-            </p>
+            <p />
           </section>
 
           <section id="two">
@@ -91,7 +88,7 @@ class HomeIndex extends React.Component {
             <h2>Get In Touch</h2>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form data-netlify="true" name="form" method="post">
+                <form data-netlify="true" name="contact" method="post">
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -121,7 +118,7 @@ class HomeIndex extends React.Component {
                 </form>
                 <ul className="actions">
                   <li>
-                    <input type="submit" />
+                    <button type="submit">Submit</button>
                   </li>
                 </ul>
               </div>
