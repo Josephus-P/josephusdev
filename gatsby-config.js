@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    title: 'Gatsby Starter - Strata by HTML5 UP',
+    author: 'Hunter Chang',
+    description: 'A Gatsby.js Starter based on Strata by HTML5 UP',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,21 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/sw.js': ['Cache-Control: no-cache'],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: ['UA-134086069-1'],
+      },
+    },
   ],
 }

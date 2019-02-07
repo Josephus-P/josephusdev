@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 class Gallery extends Component {
   renderGallery() {
@@ -10,14 +11,14 @@ class Gallery extends Component {
     const gallery = images.map((obj, i) => {
       return (
         <article className="6u 12u$(xsmall) work-item" key={i}>
-          <a
+          <OutboundLink
             className="image fit thumb"
             href={obj.src}
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={obj.thumbnail} alt={obj.caption} />
-          </a>
+          </OutboundLink>
 
           <h3>{obj.caption}</h3>
           <p>{obj.description}</p>

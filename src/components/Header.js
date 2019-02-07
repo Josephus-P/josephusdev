@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 import Footer from './Footer'
 
@@ -7,7 +8,7 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <a
+          <OutboundLink
             href="https://www.linkedin.com/in/josueperalta"
             rel="noopener noreferrer"
             className="image avatar"
@@ -18,7 +19,7 @@ class Header extends React.Component {
               }
               alt=""
             />
-          </a>
+          </OutboundLink>
           <h1>
             <strong>Josue Peralta</strong>
           </h1>
