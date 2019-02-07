@@ -13,7 +13,7 @@ import brows from '../assets/images/thumbs/mb.png'
 const PROJECTS = [
   {
     id: '1',
-    src: 'https://propertymgmt.netlify.com/',
+    src: 'https://properteazy.netlify.com/',
     thumbnail: properteazy,
     caption: 'PropertEAZY',
     description: 'Property Management App',
