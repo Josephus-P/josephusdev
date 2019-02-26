@@ -9,6 +9,7 @@ import properteazy from '../assets/images/thumbs/properteazy.png'
 import conway from '../assets/images/thumbs/Conway.png'
 import sweetheart from '../assets/images/thumbs/sweetheart.png'
 import brows from '../assets/images/thumbs/mb.png'
+import karmachat from '../assets/images/thumbs/karmachat.png'
 
 const PROJECTS = [
   {
@@ -20,21 +21,28 @@ const PROJECTS = [
   },
   {
     id: '2',
-    src: 'https://sweetheartshop.netlify.com/',
-    thumbnail: sweetheart,
-    caption: 'Sweetheart Shop',
+    src: 'https://karmachat.netlify.com',
+    thumbnail: karmachat,
+    caption: 'Karma Chat',
     description:
-      'E-Commerce website that sells bath and beauty products (WIP).',
+      'Instant messaging app. Post positive messages and get karma points.',
   },
   {
     id: '3',
+    src: 'https://sweetheartshop.netlify.com/',
+    thumbnail: sweetheart,
+    caption: 'Sweetheart Shop (WIP)',
+    description: 'E-Commerce website that sells bath and beauty products.',
+  },
+  {
+    id: '4',
     src: 'https://browsbymonica.com',
     thumbnail: brows,
     caption: 'Brows by Monica',
     description: 'Salon website built for Microblading Boutique LLC',
   },
   {
-    id: '4',
+    id: '5',
     src: 'https://jpgameoflife.netlify.com/',
     thumbnail: conway,
     caption: "Conway's Game of Life",
