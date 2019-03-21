@@ -10,39 +10,50 @@ import conway from '../assets/images/thumbs/Conway.png'
 import sweetheart from '../assets/images/thumbs/sweetheart.png'
 import brows from '../assets/images/thumbs/mb.png'
 import karmachat from '../assets/images/thumbs/karmachat.png'
+import todo from '../assets/images/thumbs/yaro-todo.png'
 
 const PROJECTS = [
   {
     id: '1',
     src: 'https://properteazy.netlify.com/',
     thumbnail: properteazy,
-    caption: 'PropertEAZY',
-    description: 'Property Management App',
+    caption: 'PropertEAZY (Property management app)',
+    description:
+      'React | Material-UI | Node/Express | PostgreSQL | Stripe Connect | Firebase Auth',
   },
   {
     id: '2',
     src: 'https://karmachat.netlify.com',
     thumbnail: karmachat,
-    caption: 'Karma Chat',
+    caption: 'Karma Chat (Real-time messaging app)',
     description:
-      'Instant messaging app. Post positive messages and get karma points.',
+      'React | Ant Design | Socket.io | Node/Express | PostgreSQL | Firebase Auth',
   },
   {
     id: '3',
-    src: 'https://sweetheartshop.netlify.com/',
-    thumbnail: sweetheart,
-    caption: 'Sweetheart Shop (WIP)',
-    description: 'E-Commerce website that sells bath and beauty products.',
+    src: 'https://yaro-todo.netlify.com/',
+    thumbnail: todo,
+    caption: 'Yaro Todo (Todo list app with e2e and unit tests)',
+    description:
+      'React | Material-UI | Node/Express | PostgreSQL | Firebase Auth | Mocha/Chai | Cypress.io',
   },
   {
     id: '4',
-    src: 'https://browsbymonica.com',
-    thumbnail: brows,
-    caption: 'Brows by Monica',
-    description: 'Salon website built for Microblading Boutique LLC',
+    src: 'https://sweetheartshop.netlify.com/',
+    thumbnail: sweetheart,
+    caption: 'Sweetheart Shop (WIP) (E-Commerce website)',
+    description: 'Gatsby | Bootstrap (Grid) | DatoCMS | Snipcart',
   },
   {
     id: '5',
+    src: 'https://browsbymonica.com',
+    thumbnail: brows,
+    caption:
+      'Brows by Monica (Salon website built for Microblading Boutique LLC',
+    description: 'Gatsby | SASS | Bootstrap/Reactstrap | Square Appointments',
+  },
+  {
+    id: '6',
     src: 'https://jpgameoflife.netlify.com/',
     thumbnail: conway,
     caption: "Conway's Game of Life",
@@ -82,11 +93,12 @@ class HomeIndex extends React.Component {
 
             <Gallery
               images={PROJECTS.map(
-                ({ id, src, thumbnail, caption, description }) => ({
+                ({ id, src, thumbnail, caption, description, tech }) => ({
                   src,
                   thumbnail,
                   caption,
                   description,
+                  tech,
                 })
               )}
             />
