@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 
 import properteazy from '../assets/images/thumbs/properteazy.png'
 import conway from '../assets/images/thumbs/Conway.png'
@@ -11,6 +12,7 @@ import sweetheart from '../assets/images/thumbs/sweetheart.png'
 import brows from '../assets/images/thumbs/mb.png'
 import karmachat from '../assets/images/thumbs/karmachat.png'
 import todo from '../assets/images/thumbs/yaro-todo.png'
+import blog1 from '../assets/images/thumbs/blog1.jpg'
 
 const PROJECTS = [
   {
@@ -61,6 +63,8 @@ const PROJECTS = [
   },
 ]
 
+const POSTS = [{ title: '', subtitle: '', url: '' }]
+
 class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Josue Peralta'
@@ -88,17 +92,46 @@ class HomeIndex extends React.Component {
             <p />
           </section>
 
+          <section>
+            <h2>Blog Posts</h2>
+            <div>
+              <div className="row">
+                <article className="6u 12u$(xsmall) work-item">
+                  <OutboundLink
+                    className="image fit thumb"
+                    href="https://medium.com/@_josueperalta/using-firebase-auth-with-a-custom-node-js-server-part-1-53bdb622c89a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={blog1} />
+                  </OutboundLink>
+                  <OutboundLink
+                    href="https://medium.com/@_josueperalta/using-firebase-auth-with-a-custom-node-js-server-part-1-53bdb622c89a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>
+                      Using Firebase Auth with a Custom Node.js Server (Part 1)
+                    </h3>
+                  </OutboundLink>
+                  <p>
+                    I cover how to setup Firebase Admin and protect your express
+                    routes with token verification middleware.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
           <section id="two">
-            <h2>Recent Work</h2>
+            <h2>Projects</h2>
 
             <Gallery
               images={PROJECTS.map(
-                ({ id, src, thumbnail, caption, description, tech }) => ({
+                ({ src, thumbnail, caption, description }) => ({
                   src,
                   thumbnail,
                   caption,
                   description,
-                  tech,
                 })
               )}
             />

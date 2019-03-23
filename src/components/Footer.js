@@ -28,6 +28,14 @@ class Footer extends React.Component {
             </li>
             <li>
               <a
+                href="https://medium.com/@_josueperalta"
+                className="icon fa-medium"
+              >
+                <span className="label">Medium</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="mailto:josephusdev@gmail.com"
                 className="icon fa-envelope-o"
               >
@@ -40,6 +48,7 @@ class Footer extends React.Component {
             <li>
               Design: <a href="http://html5up.net">HTML5 UP</a>
             </li>
+            <li>Modified by Josue Peralta</li>
           </ul>
         </div>
       </div>
