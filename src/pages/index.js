@@ -13,6 +13,7 @@ import brows from '../assets/images/thumbs/mb.png'
 import karmachat from '../assets/images/thumbs/karmachat.png'
 import todo from '../assets/images/thumbs/yaro-todo.png'
 import blog1 from '../assets/images/thumbs/blog1.jpg'
+import blog2 from '../assets/images/thumbs/mocha.png'
 
 const PROJECTS = [
   {
@@ -63,8 +64,6 @@ const PROJECTS = [
   },
 ]
 
-const POSTS = [{ title: '', subtitle: '', url: '' }]
-
 class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Josue Peralta'
@@ -103,7 +102,7 @@ class HomeIndex extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={blog1} />
+                    <img src={blog1} alt="blog post" />
                   </OutboundLink>
                   <OutboundLink
                     href="https://medium.com/@_josueperalta/using-firebase-auth-with-a-custom-node-js-server-part-1-53bdb622c89a"
@@ -117,6 +116,30 @@ class HomeIndex extends React.Component {
                   <p>
                     I cover how to setup Firebase Admin and protect your express
                     routes with token verification middleware.
+                  </p>
+                </article>
+
+                <article className="6u 12u$(xsmall) work-item">
+                  <OutboundLink
+                    className="image fit thumb"
+                    href="https://medium.com/@_josueperalta/using-firebase-auth-with-a-custom-node-js-server-part-2-cad0369949ad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={blog2} alt="blog post" />
+                  </OutboundLink>
+                  <OutboundLink
+                    href="https://medium.com/@_josueperalta/using-firebase-auth-with-a-custom-node-js-server-part-2-cad0369949ad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>
+                      Using Firebase Auth with a Custom Node.js Server (Part 2)
+                    </h3>
+                  </OutboundLink>
+                  <p>
+                    I complete the tutorial by showing you how to run tests
+                    against your protected server endpoints with Mocha and Chai.
                   </p>
                 </article>
               </div>
