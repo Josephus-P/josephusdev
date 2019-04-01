@@ -45,14 +45,14 @@ const PROJECTS = [
     src: 'https://sweetheartshop.netlify.com/',
     thumbnail: sweetheart,
     caption: 'Sweetheart Shop (WIP) (E-Commerce website)',
-    description: 'Gatsby | Bootstrap (Grid) | DatoCMS | Snipcart',
+    description: 'Gatsby | Bootstrap (Grid) | DatoCMS | Snipcart API',
   },
   {
     id: '5',
     src: 'https://browsbymonica.com',
     thumbnail: brows,
     caption:
-      'Brows by Monica (Salon website built for Microblading Boutique LLC',
+      'Brows by Monica (Salon website built for Microblading Boutique LLC)',
     description: 'Gatsby | SASS | Bootstrap/Reactstrap | Square Appointments',
   },
   {
