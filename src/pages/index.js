@@ -34,9 +34,9 @@ const PROJECTS = [
   },
   {
     id: '3',
-    src: 'https://yaro-todo.netlify.com/',
+    src: 'https://todo-jp.netlify.com/',
     thumbnail: todo,
-    caption: 'Yaro Todo (Todo list app with e2e and unit tests)',
+    caption: 'Todo App',
     description:
       'React | Material-UI | Node/Express | PostgreSQL | Firebase Auth | Mocha/Chai | Cypress.io',
   },
